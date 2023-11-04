@@ -13,6 +13,9 @@ typedef enum
     OBJ_STRUCT
 } data_type_t;
 
+#define GET_OFFSET(struct_name, field_name) (unsigned int)&(((struct_name *)0)->field_name)
+#define FIELD_SIZE(struct_name, field_name) sizeof(((struct_name *)0)->field_name)
+
 typedef struct field_info
 {
     char fname[MAX_FIELD_NAME_SIZE];
