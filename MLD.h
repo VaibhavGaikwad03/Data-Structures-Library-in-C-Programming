@@ -2,7 +2,7 @@
 #define MAX_STRUCTURE_NAME_SIZE 128
 
 typedef enum
-{
+{ 
     UINT8,
     UINT32,
     INT32,
